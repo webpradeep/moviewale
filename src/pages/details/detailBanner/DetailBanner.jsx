@@ -6,12 +6,12 @@ import ContentWrapper from "../../../components/contentWrapper/ContentWrapper";
 import useFetch from "../../../hooks/useFetch";
 import Genres from "../../../components/genres/Genres";
 import CircleRating from "../../../components/circleRating/CircleRating";
-import Img from "../../../components/lazyLoadImage/Img";
 import PosterFallback from "../../../assets/no-poster.png";
 
 import VideoPopup from "../../../components/videoPopup/VideoPopup";
 import "./DetailBanner.scss"
 import PlayBtn from "../PlayBtn";
+import Img from "../../../components/lazyloadImage/Img";
 
 const DetailBanner = ({ video, crew }) => {
     const [show, setShow] = useState(false);
