@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import ContentWrapper from '../../../components/contentWrapper/ContentWrapper';
 import "./VideoSection.scss"
 import VideoPopup from '../../../components/videoPopup/VideoPopup';
-import Img from '../../../components/lazyLoadImage/Img';
+import Img from '../../../components/lazyloadImage/Img';
 import PlayBtn from '../PlayBtn';
 
 const VideoSection = ({ data, loading }) => {
@@ -30,14 +30,14 @@ const VideoSection = ({ data, loading }) => {
                             <div key={video.id} className="videoItem"
                                 onClick={() => {
                                     setShow(true)
-                                    videoId(video.key)
+                                    videoId(video?.key)
                                 }}>
                                 <div className="videoThumbnail">
-                                    <Img src={`https://img.youtube.com/vi/${video.key}/mqdefault.jpg`} />
+                                    <Img src={`https://img.youtube.com/vi/${video?.key}/mqdefault.jpg`} />
                                     <PlayBtn />
                                 </div>
                                 <div className="videoTitle">
-                                    {video.name}
+                                    {video?.name}
                                 </div>
                             </div>
                         ))
