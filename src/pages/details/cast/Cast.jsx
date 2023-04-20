@@ -1,9 +1,9 @@
 import React from 'react'
 import { useSelector } from "react-redux";
 import ContentWrapper from "../../../components/contentWrapper/ContentWrapper";
-import Img from "../../../components/lazyLoadImage/Img";
 import avatar from "../../../assets/avatar.png";
 import "./Cast.scss"
+import Img from '../../../components/lazyloadImage/Img';
 
 
 
